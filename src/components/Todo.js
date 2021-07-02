@@ -6,9 +6,8 @@ import { actionCreators } from "../store";
 function Todo({ text, id, onBtnClick }) {
   return (
     <li id={id}>
-      <Link to={`/${id}`}>
-        {text} <button onClick={() => onBtnClick(id)}>DEL</button>
-      </Link>
+      <Link to={`/${id}`}>{text}</Link>
+      <button onClick={() => onBtnClick(id)}>DEL</button>
     </li>
   );
 }

@@ -23,7 +23,7 @@ function Home({ toDos, addTodo }) {
       </form>
       <ul>
         {toDos.map(todo => (
-          <Todo text={todo.text} id={todo.id} key={todo.id} />
+          <Todo text={todo?.text} id={todo.id} key={todo.id} />
         ))}
       </ul>
     </>
